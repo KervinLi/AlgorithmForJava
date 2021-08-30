@@ -38,6 +38,8 @@ import java.util.Map;
 public class MaxSubLength {
     /**
      * [滑动窗口]字符串最长字串长度
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(1)
      * @param s
      * @return maxSubLength
      */
@@ -50,6 +52,7 @@ public class MaxSubLength {
         int left = 0;
         for(int right =0 ,len = s.length();right<len;right++){
             if(map.containsKey(s.charAt(right))){
+                //存在重复字符 左指针移动到重复字符下一个位置
                 left = Math.max(left,map.get(s.charAt(right))+1);
             }
             map.put(s.charAt(right),right);
