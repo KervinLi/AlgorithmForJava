@@ -1,5 +1,6 @@
 package com.kerwin.algorithm.string;
 
+import com.kerwin.algorithm.string.compare.CompareVersion;
 import com.kerwin.algorithm.string.match.ValidParentheses;
 import com.kerwin.algorithm.string.sub.LongestCommonPrefix;
 import com.kerwin.algorithm.string.sub.MaxSubLength;
@@ -42,5 +43,15 @@ public class AlgorithmStringTest {
         String[] arr = {"flower","flow","flight"};
         log.info("横向扫描结果；{}",LongestCommonPrefix.rowLongestCommonPrefix(arr));
         log.info("纵向扫描结果；{}",LongestCommonPrefix.colLongestCommonPrefix(arr));
+    }
+
+    /**
+     * 比较版本号
+     */
+    @Test
+    void testCompareVersion(){
+        String v1 = "7.5.2.4";
+        String v2 = "7.5.3";
+        log.info("版本号1:{},版本号2:{},比较结果：{}",v1,v2, CompareVersion.splitCompareVersion(v1,v2));
     }
 }
