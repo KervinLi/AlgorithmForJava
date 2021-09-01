@@ -61,15 +61,4 @@ public class MaxSubLength {
         return maxLength;
     }
 
-    /**
-     * 测试类
-     * @param args
-     */
-    public static void main(String[] args) {
-        String[] arr = {"abcabcbb","bbbbb","pwwkew",""};
-        for(int i = 0;i<arr.length;i++){
-            log.info("{}最长子串长度{}",arr[i],lengthOfLongestSubString(arr[i]));
-        }
-    }
-
 }

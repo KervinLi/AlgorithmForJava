@@ -24,7 +24,6 @@ public class ValidParentheses {
             put(']', '[');
             put('}', '{');
         }};
-        //Deque<Character> stack = new LinkedList<Character>();
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);

@@ -1,6 +1,9 @@
 package com.kerwin.algorithm.string;
 
 import com.kerwin.algorithm.string.match.ValidParentheses;
+import com.kerwin.algorithm.string.sub.LongestCommonPrefix;
+import com.kerwin.algorithm.string.sub.MaxSubLength;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -8,6 +11,7 @@ import org.junit.jupiter.api.Test;
  * @Author KerVinLi
  * @Version 1.0
  */
+@Slf4j
 public class AlgorithmStringTest {
     /**
      * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效
@@ -17,5 +21,26 @@ public class AlgorithmStringTest {
         System.out.println(ValidParentheses.isValid("({[{}]})"));   //true
         System.out.println(ValidParentheses.isValid("({}{}[]{})")); //true
         System.out.println(ValidParentheses.isValid("({[{}(}]})")); //false
+    }
+
+    /**
+     * 给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度
+     */
+    @Test
+    void testLengthOfLongestSubString(){
+        String[] arr = {"abcabcbb","bbbbb","pwwkew",""};
+        for(int i = 0;i<arr.length;i++){
+            log.info("{}最长子串长度{}",arr[i], MaxSubLength.lengthOfLongestSubString(arr[i]));
+        }
+    }
+
+    /**
+     * 编写一个函数来查找字符串数组中的最长公共前缀
+     */
+    @Test
+    void testLongestCommonPrefix(){
+        String[] arr = {"flower","flow","flight"};
+        log.info("横向扫描结果；{}",LongestCommonPrefix.rowLongestCommonPrefix(arr));
+        log.info("纵向扫描结果；{}",LongestCommonPrefix.colLongestCommonPrefix(arr));
     }
 }

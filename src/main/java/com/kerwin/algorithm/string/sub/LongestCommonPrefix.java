@@ -49,7 +49,7 @@ public class LongestCommonPrefix {
      * @param str2
      * @return
      */
-    public static String longestCommonPrefix(String str1, String str2){
+    private static String longestCommonPrefix(String str1, String str2){
         int minLength = Math.min(str1.length(),str2.length());
         int index = 0;
         while (index < minLength && str1.charAt(index) == str2.charAt(index)){
