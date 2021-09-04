@@ -1,4 +1,4 @@
-package com.kerwin.algorithm.array;
+package com.kerwin.algorithm.array.pointer;
 
 /**
  * @Description: 盛最多水的容器
