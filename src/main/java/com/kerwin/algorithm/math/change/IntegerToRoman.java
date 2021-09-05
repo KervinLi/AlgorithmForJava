@@ -1,7 +1,7 @@
 package com.kerwin.algorithm.math.change;
 
 /**
- * @Description: 整数转罗马数字
+ * @Description: 整数转罗马数字[1 3999]
  * 罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。
  * 字符          数值
  * I             1
@@ -40,7 +40,7 @@ public class IntegerToRoman {
      * 我们用来确定罗马数字的规则是：
      * 对于罗马数字从左到右的每一位，选择尽可能大的符号值。
      * 对于 140，最大可以选择的符号值为 C=100。接下来，对于剩余的数字 40，最大可以选择的符号值为 XL=40。
-     * 因此，140140 的对应的罗马数字为 C+XL=CXL。
+     * 因此，140 的对应的罗马数字为 C+XL=CXL。
      * @param num
      * @return
      */
