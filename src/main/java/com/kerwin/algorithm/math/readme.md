@@ -6,3 +6,5 @@ com.kerwin.algorithm.math.change
 com.kerwin.algorithm.math.change.IntegerToRoman
 ### 罗马数字转整数
 com.kerwin.algorithm.math.change.RomanToInteger
+### rand7实现rand10
+com.kerwin.algorithm.math.random.RandSevenToRandTen
