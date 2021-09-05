@@ -8,3 +8,5 @@ com.kerwin.algorithm.math.change.IntegerToRoman
 com.kerwin.algorithm.math.change.RomanToInteger
 ### rand7实现rand10
 com.kerwin.algorithm.math.random.RandSevenToRandTen
+### 随机生成含有特殊含义的业务流水号
+com.kerwin.algorithm.math.random.BusinessSerialNumberGenerator

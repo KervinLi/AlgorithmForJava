@@ -2,6 +2,7 @@ package com.kerwin.algorithm.math;
 
 import com.kerwin.algorithm.math.change.IntegerToRoman;
 import com.kerwin.algorithm.math.change.RomanToInteger;
+import com.kerwin.algorithm.math.random.BusinessSerialNumberGenerator;
 import com.kerwin.algorithm.math.random.RandSevenToRandTen;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -39,5 +40,15 @@ public class AlgorithmMathTest {
     @Test
     void testRandSevenToRandTen(){
         log.info("通过Rand7生产Rand10:{}", RandSevenToRandTen.randSevenToRandTen());
+    }
+
+    /**
+     * 随机生成含有特殊含义的业务流水号
+     */
+    @Test
+    void testBusinessSerialNumberGenerator(){
+        for(int i=0 ;i<100;i++){
+           log.info("业务流水号：{}", BusinessSerialNumberGenerator.produceBusinessSerialNumber());
+        }
     }
 }
