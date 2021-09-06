@@ -1,5 +1,6 @@
 package com.kerwin.algorithm.math;
 
+import com.kerwin.algorithm.math.arithmetic.IpLongUtils;
 import com.kerwin.algorithm.math.change.IntegerToRoman;
 import com.kerwin.algorithm.math.change.RomanToInteger;
 import com.kerwin.algorithm.math.random.BusinessSerialNumberGenerator;
@@ -50,5 +51,12 @@ public class AlgorithmMathTest {
         for(int i=0 ;i<100;i++){
            log.info("业务流水号：{}", BusinessSerialNumberGenerator.produceBusinessSerialNumber());
         }
+    }
+
+    @Test
+    void testIpLongUtils(){
+        log.info("IP({})转Long:{}", "192.168.0.1",IpLongUtils.ip2Long("192.168.0.1"));
+        log.info("Long({})转IP:{}", 3232235521L,IpLongUtils.long2Ip(3232235521L));
+
     }
 }
