@@ -53,10 +53,15 @@ public class AlgorithmMathTest {
         }
     }
 
+    /**
+     * IPv4与Long相互转换工具
+     */
     @Test
     void testIpLongUtils(){
         log.info("IP({})转Long:{}", "192.168.0.1",IpLongUtils.ip2Long("192.168.0.1"));
         log.info("Long({})转IP:{}", 3232235521L,IpLongUtils.long2Ip(3232235521L));
+        log.info("IP({})转Long:{}", "127.0.0.1",IpLongUtils.ip2Long("127.0.0.1"));
+        log.info("Long({})转IP:{}", 2130706433L,IpLongUtils.long2Ip(2130706433L));
 
     }
 }
