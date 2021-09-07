@@ -2,6 +2,7 @@ package com.kerwin.algorithm.string;
 
 import com.kerwin.algorithm.string.compare.CompareVersion;
 import com.kerwin.algorithm.string.match.ValidParentheses;
+import com.kerwin.algorithm.string.sub.BalancedStringSplit;
 import com.kerwin.algorithm.string.sub.LongestCommonPrefix;
 import com.kerwin.algorithm.string.sub.MaxSubLength;
 import lombok.extern.slf4j.Slf4j;
@@ -53,5 +54,15 @@ public class AlgorithmStringTest {
         String v1 = "7.5.2.4";
         String v2 = "7.5.3";
         log.info("版本号1:{},版本号2:{},比较结果：{}",v1,v2, CompareVersion.splitCompareVersion(v1,v2));
+    }
+
+    /**
+     * 分割平衡字符串
+     */
+    @Test
+    void testBalancedStringSplit(){
+        log.info("字符串({})分割个数：{}","RLRRRLLRLL", BalancedStringSplit.balancedStringSplit("RLRRRLLRLL"));
+        log.info("字符串({})分割个数：{}","RLLLLRRRLR", BalancedStringSplit.balancedStringSplit("RLLLLRRRLR"));
+        log.info("字符串({})分割个数：{}","RLRRLLRLRL", BalancedStringSplit.balancedStringSplit("RLRRLLRLRL"));
     }
 }

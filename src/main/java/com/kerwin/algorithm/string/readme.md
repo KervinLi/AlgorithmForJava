@@ -10,3 +10,5 @@ com.kerwin.algorithm.string.sub.LongestCommonPrefix
 com.kerwin.algorithm.string.match.ValidParentheses
 ### 比较版本号
 com.kerwin.algorithm.string.compare.CompareVersion
+### 分割平衡字符串
+com.kerwin.algorithm.string.sub.BalancedStringSplit
