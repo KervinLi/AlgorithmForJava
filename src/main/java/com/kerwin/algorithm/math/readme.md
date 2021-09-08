@@ -12,3 +12,5 @@ com.kerwin.algorithm.math.random.RandSevenToRandTen
 com.kerwin.algorithm.math.random.BusinessSerialNumberGenerator
 ### IPv4与Long转换工具
 com.kerwin.algorithm.math.arithmetic.IpLongUtils
+### 实现类似于Math.pow
+com.kerwin.algorithm.math.arithmetic.Pow

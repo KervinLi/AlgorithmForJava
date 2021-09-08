@@ -1,6 +1,7 @@
 package com.kerwin.algorithm.math;
 
 import com.kerwin.algorithm.math.arithmetic.IpLongUtils;
+import com.kerwin.algorithm.math.arithmetic.Pow;
 import com.kerwin.algorithm.math.change.IntegerToRoman;
 import com.kerwin.algorithm.math.change.RomanToInteger;
 import com.kerwin.algorithm.math.random.BusinessSerialNumberGenerator;
@@ -63,5 +64,16 @@ public class AlgorithmMathTest {
         log.info("IP({})转Long:{}", "127.0.0.1",IpLongUtils.ip2Long("127.0.0.1"));
         log.info("Long({})转IP:{}", 2130706433L,IpLongUtils.long2Ip(2130706433L));
 
+    }
+
+    /**
+     * 自定义pow测试
+     */
+    @Test
+    void testPow(){
+        log.info("pow(2,2)={}", Pow.selfPow(2,2));
+        log.info("pow(2,-2)={}", Pow.selfPow(2,-2));
+        log.info("pow(2,0)={}", Pow.selfPow(2,0));
+        log.info("pow(2,8)={}", Pow.selfPow(2,8));
     }
 }
