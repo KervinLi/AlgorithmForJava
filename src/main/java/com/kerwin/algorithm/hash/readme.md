@@ -4,3 +4,5 @@ com.kerwin.algorithm.hash
 com.kerwin.algorithm.hash.cache
 ### LRU (最近最少使用) 缓存机制
 com.kerwin.algorithm.hash.cache.LRUCache
+### LRU (最近最少使用) 缓存机制基于LinkedHashMap实现
+com.kerwin.algorithm.hash.cache.LRUCacheByLinkedHashMap
