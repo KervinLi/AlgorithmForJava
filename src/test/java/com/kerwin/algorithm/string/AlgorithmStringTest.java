@@ -2,6 +2,7 @@ package com.kerwin.algorithm.string;
 
 import com.kerwin.algorithm.string.compare.CompareVersion;
 import com.kerwin.algorithm.string.match.ValidParentheses;
+import com.kerwin.algorithm.string.match.ValidParenthesisString;
 import com.kerwin.algorithm.string.sub.BalancedStringSplit;
 import com.kerwin.algorithm.string.sub.LongestCommonPrefix;
 import com.kerwin.algorithm.string.sub.MaxSubLength;
@@ -64,5 +65,18 @@ public class AlgorithmStringTest {
         log.info("字符串({})分割个数：{}","RLRRRLLRLL", BalancedStringSplit.balancedStringSplit("RLRRRLLRLL"));
         log.info("字符串({})分割个数：{}","RLLLLRRRLR", BalancedStringSplit.balancedStringSplit("RLLLLRRRLR"));
         log.info("字符串({})分割个数：{}","RLRRLLRLRL", BalancedStringSplit.balancedStringSplit("RLRRLLRLRL"));
+    }
+
+    /**
+     * 有效的括号字符串
+     */
+    @Test
+    void testValidParenthesisString(){
+        log.info("{}是否有效：{}","()", ValidParenthesisString.checkValidString("()"));
+        log.info("{}是否有效：{}","(*)", ValidParenthesisString.checkValidString("(*)"));
+        log.info("{}是否有效：{}","(*))", ValidParenthesisString.checkValidString("(*))"));
+        log.info("{}是否有效：{}","(*)())", ValidParenthesisString.checkValidString("(*())"));
+        log.info("{}是否有效：{}","()**())", ValidParenthesisString.checkValidString("()**())"));
+        log.info("{}是否有效：{}","()**())))", ValidParenthesisString.checkValidString("()**())))"));
     }
 }

@@ -12,3 +12,5 @@ com.kerwin.algorithm.string.match.ValidParentheses
 com.kerwin.algorithm.string.compare.CompareVersion
 ### 分割平衡字符串
 com.kerwin.algorithm.string.sub.BalancedStringSplit
+### 有效的括号字符串
+com.kerwin.algorithm.string.match.ValidParenthesisString
