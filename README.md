@@ -1,5 +1,5 @@
 # AlgorithmForJava
-Data Structures and Algorithm Analysis in Java
+数据结构与算法分析学习笔记整理，每日LeetCode中算法与数据结构相关题目，学习并整理Java语言描述最优解法。
 
 ## 字符串常用算法
 com.kerwin.algorithm.string  
