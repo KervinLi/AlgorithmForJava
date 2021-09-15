@@ -1,6 +1,7 @@
 package com.kerwin.algorithm.array;
 
 import com.kerwin.algorithm.array.pointer.ContainerWithMostWater;
+import com.kerwin.algorithm.array.pointer.FindPeakElement;
 import com.kerwin.algorithm.array.pointer.NumberOfBoomerangs;
 import com.kerwin.algorithm.array.pointer.TwoSum;
 import lombok.extern.slf4j.Slf4j;
@@ -39,5 +40,14 @@ public class AlgorithmArrayTest {
     void testNumberOfBoomerangs(){
         int [][] points = {{0,0},{1,0},{2,0}};
         log.info("回旋镖的数量:{}", NumberOfBoomerangs.numberOfBoomerangs(points));
+    }
+
+    /**
+     * 寻找峰值
+     */
+    @Test
+    void testFindPeakElement(){
+        int[] nums = {1,2,1,3,5,6,4};
+        log.info("峰值为：{}", FindPeakElement.findPeakElement(nums));
     }
 }
