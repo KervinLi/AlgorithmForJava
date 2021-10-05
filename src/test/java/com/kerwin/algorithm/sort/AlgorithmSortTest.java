@@ -3,10 +3,7 @@ package com.kerwin.algorithm.sort;
 import com.kerwin.algorithm.sort.top.TopKWithPriorityQueue;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * @Description: 排序相关测试

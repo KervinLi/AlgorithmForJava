@@ -1,5 +1,7 @@
 package com.kerwin.algorithm.sort.top;
 
+import lombok.Data;
+
 import java.util.*;
 
 /**
@@ -7,6 +9,7 @@ import java.util.*;
  * @Author KerVinLi
  * @Version 1.0
  */
+@Data
 public class TopKWithPriorityQueue<E extends Comparable> {
     //优先队列
     private PriorityQueue<E> queue;
@@ -55,6 +58,10 @@ public class TopKWithPriorityQueue<E extends Comparable> {
                     return o2.compareTo(o1);
                 }
             });
+        }
+        //O(N)时间复杂度处理TOPK
+        for(E ele:list){
+            this.add(ele);
         }
     }
 
