@@ -1,11 +1,16 @@
 package com.kerwin.algorithm.array;
 
+import com.kerwin.algorithm.array.iterator.PeekingIterator;
 import com.kerwin.algorithm.array.pointer.ContainerWithMostWater;
 import com.kerwin.algorithm.array.pointer.FindPeakElement;
 import com.kerwin.algorithm.array.pointer.NumberOfBoomerangs;
 import com.kerwin.algorithm.array.pointer.TwoSum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Description: 数组相关测试
@@ -49,5 +54,30 @@ public class AlgorithmArrayTest {
     void testFindPeakElement(){
         int[] nums = {1,2,1,3,5,6,4};
         log.info("峰值为：{}", FindPeakElement.findPeakElement(nums));
+    }
+
+    /**
+     * 顶端迭代器测试用例
+     */
+    @Test
+    void testPeekingIterator(){
+        List<Integer> list = new ArrayList<Integer>(){{
+            add(1);
+            add(2);
+            add(4);
+            add(3);
+            add(5);
+        }};
+        PeekingIterator peekingIterator = new PeekingIterator<Integer>(list.iterator());
+        System.out.println(peekingIterator.next());     // 返回 1 ，指针移动到下一个元素 [1,(2),4,3,5]
+        System.out.println(peekingIterator.peek());     // 返回 2 ，指针未发生移动 [1,(2),4,3,5]
+        System.out.println(peekingIterator.next());     // 返回 2 ，指针移动到下一个元素 [1,2,(4),3,5]
+        System.out.println(peekingIterator.next());     // 返回 4 ，指针移动到下一个元素 [1,2,4,(3),5]
+        System.out.println(peekingIterator.hasNext());  // 返回 true
+        System.out.println(peekingIterator.next());     // 返回 3 ，指针移动到下一个元素 [1,2,4,3,(5)]
+        System.out.println(peekingIterator.hasNext());  // 返回 true
+        System.out.println(peekingIterator.next());     // 返回 5 ，指针移动到下一个元素 [1,2,4,3,5]
+        System.out.println(peekingIterator.hasNext());  // 返回 false
+
     }
 }

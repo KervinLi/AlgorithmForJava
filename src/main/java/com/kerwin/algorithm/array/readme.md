@@ -8,3 +8,5 @@ com.kerwin.algorithm.array.pointer.TwoSum
 com.kerwin.algorithm.array.pointer.NumberOfBoomerangs
 ### 寻找峰值
 com.kerwin.algorithm.array.pointer.FindPeakElement
+### 顶端迭代器
+com.kerwin.algorithm.array.iterator.PeekingIterator
