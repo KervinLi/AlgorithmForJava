@@ -10,3 +10,5 @@ com.kerwin.algorithm.array.pointer.NumberOfBoomerangs
 com.kerwin.algorithm.array.pointer.FindPeakElement
 ### 顶端迭代器
 com.kerwin.algorithm.array.iterator.PeekingIterator
+### 第三大的数
+com.kerwin.algorithm.array.compare.ThirdMax

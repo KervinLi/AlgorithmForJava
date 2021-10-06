@@ -1,5 +1,6 @@
 package com.kerwin.algorithm.array;
 
+import com.kerwin.algorithm.array.compare.ThirdMax;
 import com.kerwin.algorithm.array.iterator.PeekingIterator;
 import com.kerwin.algorithm.array.pointer.ContainerWithMostWater;
 import com.kerwin.algorithm.array.pointer.FindPeakElement;
@@ -78,6 +79,11 @@ public class AlgorithmArrayTest {
         System.out.println(peekingIterator.hasNext());  // 返回 true
         System.out.println(peekingIterator.next());     // 返回 5 ，指针移动到下一个元素 [1,2,4,3,5]
         System.out.println(peekingIterator.hasNext());  // 返回 false
+    }
 
+    @Test
+    void testThirdMax(){
+        int [] nums = {5,6,1,4,5,6,4};
+        System.out.println(ThirdMax.thirdMax(nums));
     }
 }
