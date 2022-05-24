@@ -1,7 +1,5 @@
 package com.kerwin.algorithm.string.compare;
 
-import javax.persistence.criteria.CriteriaBuilder;
-
 /**
  * @Description: 比较版本号
  * 版本号由一个或多个修订号组成，各修订号由一个 '.' 连接。
